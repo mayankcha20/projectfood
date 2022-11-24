@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ganesh</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/1054dc667a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1054dc667a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="logo">DONATE FOOD <i class="fas fa-solid fa-heart"></i></h1>
+                <ul id="sidemenu">
+                    <li><a href="/"><i class="fas fa-house-user"></i>Home</a></li>
+                    <li><a href="#about"> About Us</a></li>
+                    <!-- <li><a href="/donations">Donations</a></li> -->
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a id="sign" href="/register">Sign-up</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <hr> -->
+
+        </div>
+    </div>
+
+    <div id="content">
+         <div class="container">
+            <div class="row">
+                <div class="header-col-1">
+                    <img src="images/header-col.jpg" alt="">
+                    <h1 class="After">Donate Food Donate Happiness</h1>
+                </div>
+                <div class="header-col-2">
+                
+                    <h1 class="sub-title">Reduce Wastage of Needy Food</h1>
+                     <p class="Help">Help others without any reason and give without the expectation of receiving anything in return</p>
+                     <pre>
+                        You have
+                             two hands.
+                        One to help yourself
+                             the second 
+                          to help others 
+                     </pre>
+                     <div class="tab-titles">
+                        <a href="#" class="btn">>>Read More</a>
+                        <a href="#services" class="btn">>>Donate</a>
+                    </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+           <!-- ---------------------------------------About---------------------------------------------------- -->
+
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-titles" >About Us</h1>
+                    <p>The application for food donation acts as an interface between the users who are looking for a channel to give the excess food without wasting it.It enables us to donate the excess food by notifying nearby users with the details of the food that is available. The required users claim the notification. The system allocates the food items based on the priority.</p>
+
+                    <a class="btn" href="#">Learn More</a>
+
+                </div>
+                <div class="col-2">
+                    <img src="images/aboutimage.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------Our Work---------------------------------------------- -->
+ 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">
+                Our services
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Donate Clothes</h3>
+                       <p> By donating books you give other people the opportunity to discover for themselves that ONE book that could change their life. </p>
+                       <a href="/cloth&shoes"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Donate Food</h3>
+                       <p> There is nothing greater than love invested in helping to feed the impoverished living in hunger.</p>
+                       <a href="/fooddonation"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="work">
+                    <img src="images/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>Donate Books</h3>
+                       <p>Giving is not just about making a donation. It is about Making a Diffrence.</p>
+                       <a href="/booksdonations"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------------------------------Contact-us---------------------------------------------------- ------>
+
+
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-left">
+                    <h1 class="sub-title">
+                        Contact-Us
+                    </h1>
+                    <p><i class="fas fa-paper-plane"></i>tushargupta22016@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9760838380</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href=""></a>
+                </div>
+                <div class="col-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messages"></textarea>
+                        <button type="submit" class="btn .btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+    <div class="copyright">
+        <p>Copyright &#169; 2022 DonateFood.com</p>
+    </div>
+</div>
+
+<!-- -------------------------------------------SCRIPT CODE-------------------------------------------------------- -->
+
+<script>
+
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw65iYZsqwA9Wsln3LaF3mriYAWEM6PYvyivXUrwl_zI_iGiOhQ4B60HFht44po0lAd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+</html>
